@@ -5,7 +5,7 @@
   moves={"R": [0, 1], "L":[0, -1], "U":[-1, 0], "D":[1, 0]},
   now_t = [0, 0],
   now_h = [0, 0],
-  # we define fome functions
+  # we define fome functions (in case you thought fome is a typo, you are wrong it stands for "facking omg mega epic")
   put=lambda l, i, n: l.insert(i, n) or (l.pop(i + 1) and False),
   sgn = lambda x: -1 if x < 0 else 1
   : (
