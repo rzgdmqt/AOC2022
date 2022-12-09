@@ -30,8 +30,7 @@
 )()
 
 # part 2
-f = (
-  lambda 
+(lambda 
   input, 
   put=lambda l, i, n: l.insert(i, n) or (l.pop(i + 1) and False),
   moves={"R": [0, 1], "L":[0, -1], "U":[-1, 0], "D":[1, 0]},
