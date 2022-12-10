@@ -21,7 +21,7 @@
 (lambda input=open("d").read().split("\n"),
   cycle=[0],
   data={"value":1},
-  crt=["."]*240
+  crt=[" "]*240
   : (lambda:
       any(
         cycle.append(0) or (
@@ -30,7 +30,7 @@
         for row in input
       ) or 
       any(
-        (crt.insert(i - 1, "#") or crt.pop(i) and False if data["value"] - 1 <= (i - 1) % 40 <= data["value"] + 1 else False) or
+        (crt.insert(i - 1, "█") or crt.pop(i) and False if data["value"] - 1 <= (i - 1) % 40 <= data["value"] + 1 else False) or
         data.update({"value": data["value"] + n}) 
         for i, n in enumerate(cycle)
       ) or 
